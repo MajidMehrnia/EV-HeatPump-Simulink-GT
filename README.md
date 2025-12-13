@@ -1,3 +1,6 @@
+This repository is based on the EV Thermal Management model published by MathWorks (Simscape).
+The original model files are not redistributed due to licensing.
+
 ## A Holistic Approach for Designing a Battery Electric Vehicle Thermal Management System
 This repository contains a model of a battery electric vehicle (BEV) with a thermal 
 management system. This virtual vehicle model was parametrized to describe a mid-size electric sedan [1].
