@@ -144,6 +144,7 @@ For any questions regarding the model place a comment in the repository.
 
 
 ## Authors and acknowledgment
+* Majid Mehrnia
 * Lorenzo Nicoletti: Developer
 * Steve Miller: Technical support
 
