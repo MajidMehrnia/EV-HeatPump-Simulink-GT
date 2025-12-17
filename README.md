@@ -9,7 +9,7 @@ The compressor model was developed and simulated in GT-SUITE.
 
 ---
 
-## Refrigerant Model in GT-SUITE
+## Refrigerant Model 
 
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
