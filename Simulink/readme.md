@@ -39,12 +39,6 @@ serve as the interface between control logic and physical components.
 Light blue fluid lines represent the **two-phase refrigerant network**
 implemented using the Simscape Fluids (Two-Phase Fluid) library.
 
-Key characteristics:
-- Refrigerant: **R1234yf**
-- Phase change: Enabled
-- Components include compressor, condenser, expansion device, and evaporator
-- Both vapor and liquid states are handled within the same network
-
 This domain captures the thermodynamic behavior of the refrigeration cycle,
 including pressure drops, heat transfer, and phase transitions, which are
 critical for EV HVAC and battery cooling applications.
