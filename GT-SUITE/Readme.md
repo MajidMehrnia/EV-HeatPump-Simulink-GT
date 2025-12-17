@@ -63,7 +63,7 @@ Map data includes:
 - Corrected mass flow rate
 - Volumetric efficiency
 - Isentropic efficiency
-- Shaft power
+- Shaft RPM
 
 Interpolation: Linear  
 Extrapolation: Clamp
