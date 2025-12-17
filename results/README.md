@@ -4,6 +4,9 @@ The three charts illustrate the behavior of a vehicle's thermal management syste
 
 This chart shows the temperature changes in key components over the same time period.
 
+
+![T_vs_t_Motor_Battery](https://github.com/user-attachments/assets/12b444a9-3d89-4ec6-883e-09bf245f8f6e)
+
 X-Axis: Time.
 
 Y-Axis: Temperature in Degrees Celsius (°C).
@@ -50,5 +53,3 @@ Condenser (Light Blue Line): Shows a large positive heat flow (heat rejection) t
 
 
 
-
-![T_vs_t_Motor_Battery](https://github.com/user-attachments/assets/12b444a9-3d89-4ec6-883e-09bf245f8f6e)
