@@ -15,6 +15,7 @@ The compressor model was developed and simulated in GT-SUITE.
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
 - Phase change: Enabled 
+---
 The model is representative of a Valeo-like electric scroll compressor commonly
 used in automotive air-conditioning and thermal management systems.
 
