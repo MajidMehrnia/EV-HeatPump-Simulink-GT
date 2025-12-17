@@ -17,6 +17,13 @@ The control algorithms are implemented in Simulink and are contained in the **Co
 
 ![Sim_diagram_GT](https://github.com/user-attachments/assets/ac0e96d3-1697-429e-8811-d3688cbbc42d)
 
+The Figure of subsystem illustrates the components responsible for importing data and signals from GT-SUITE into Simulink for co-simulation. 
+These signals enable real-time interaction between the compressor model and the system-level of BEV. 
+The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
+
+![GT_COMP](https://github.com/user-attachments/assets/4dbd01b7-b883-4f15-997c-fcee3c1f3beb)
+
+
  ## GT-SUITE
 
 Detailed compressor model implemented in GT-SUITE and coupled with Simulink through co-simulation. 
