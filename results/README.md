@@ -4,7 +4,7 @@ The three charts illustrate the behavior of a vehicle's thermal management syste
 
 This chart shows the temperature changes in key components over the same time period.
 
-X-Axis: Time (scaled by 10^5).
+X-Axis: Time.
 
 Y-Axis: Temperature in Degrees Celsius (°C).
 
