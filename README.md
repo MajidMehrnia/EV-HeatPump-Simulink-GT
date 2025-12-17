@@ -17,7 +17,22 @@ The control algorithms are implemented in Simulink and are contained in the **Co
 
 ![Sim_diagram_GT](https://github.com/user-attachments/assets/ac0e96d3-1697-429e-8811-d3688cbbc42d)
 
- 
+ ## GT-SUITE
+
+Detailed compressor model implemented in GT-SUITE and coupled with Simulink through co-simulation. 
+The GT-SUITE model represents the thermodynamic and mechanical behavior of the compressor, 
+while Simulink manages the system-level control and signal exchange. 
+
+![GT-SUITE_blocks](https://github.com/user-attachments/assets/fef207ef-334b-4d06-adff-b759e48033e8)
+
+
+The refrigerant compressor is modeled and simulated in GT-SUITE using its dedicated thermo-fluid and mechanical component libraries. 
+The model captures key compressor behaviors, including mass flow rate, pressure ratio, efficiency, and dynamic response under varying operating conditions. 
+Different sub-models are employed to represent thermodynamic processes, mechanical losses, and control-relevant dynamics.
+
+Due to GT-SUITE licensing restrictions, the original model files cannot be shared publicly. 
+Therefore, only representative diagrams, descriptions, and co-simulation interfaces are provided in this repository.
+
 
 ## Support
 For any questions regarding the model place a comment in the repository.
