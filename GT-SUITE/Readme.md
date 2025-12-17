@@ -12,7 +12,7 @@ used in automotive air-conditioning and thermal management systems.
 - Thermodynamic model: **Two-phase**
 - State definition: Pressure & Temperature
 - Phase change: Enabled (GT Refrigeration Library)
-- Oil effects: Neglected
+
 
 The refrigerant is treated as superheated vapor at compressor inlet and hot vapor
 at compressor outlet. No liquid ingestion is allowed at the compressor inlet.
