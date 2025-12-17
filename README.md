@@ -14,25 +14,13 @@ The model simulates a mid-size sedan with rear wheel drive and comprises five su
 **Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
 The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
 
-![Sim_diagram](https://github.com/user-attachments/assets/5a2eb624-464d-4112-b6ed-41adc3ae57f0)
 
-An advantage of the virtual vehicle is its versatility: All parameters are set up by one single script. 
-Therefore, the model can be easily adjusted to simulate different vehicle types, such as small city 
-cars or SUVs, with minimal modifications.
+![Sim_diagram_GT](https://github.com/user-attachments/assets/ac0e96d3-1697-429e-8811-d3688cbbc42d)
 
  
 
 ## Support
 For any questions regarding the model place a comment in the repository.
-
-
-## Authors and acknowledgment
-* Majid Mehrnia
-* Lorenzo Nicoletti: Developer
-* Steve Miller: Technical support
-
-The authors would like to thank [Sherpa Engineering](https://www.sherpa-eng.com/en/) for their 
-support and expertise in developing the model and the test scenarios.
 
 ## License
 See [license](LICENSE.md) file attached to this repository
