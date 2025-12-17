@@ -7,10 +7,10 @@ using GT-SUITE and Simulink, based on a reference EV thermal architecture. Simul
 In this work, due to time constraints, only the compressor was modeled. 
 One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. 
 The compressor model was developed and simulated in GT-SUITE.
-The model is representative of a Valeo-like electric scroll compressor commonly
-used in automotive air-conditioning and thermal management systems.
 
 ---
+The model is representative of a Valeo-like electric scroll compressor commonly
+used in automotive air-conditioning and thermal management systems.
 
 ## Refrigerant Model in GT-SUITE
 
