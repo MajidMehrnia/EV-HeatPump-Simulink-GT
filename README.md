@@ -4,7 +4,7 @@ The original model files are not redistributed due to licensing. It contains a m
 ## Description
 Developed a Heat Pump co-simulation framework for a Battery Electric Vehicle
 using GT-SUITE and Simulink, based on a reference EV thermal architecture. Simulating the entire refrigerant system in GT-SUITE and coupling it with Simulink can lead to more accurate results. 
-In this work, due to CPU constraints, only the compressor was modeled. 
+In this project, due to CPU limitations, only the compressor was modeled.
 One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. 
 The compressor model was developed and simulated in GT-SUITE.
 
