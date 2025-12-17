@@ -1,1 +1,1 @@
-The files are under licnece of MATLAB. 
+The files are under license of MATLAB. 
