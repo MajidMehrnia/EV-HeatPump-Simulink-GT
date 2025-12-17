@@ -5,6 +5,7 @@ with a clear separation of physical domains through color-coded connections.
 This structure improves model readability, physical consistency, and scalability.
 
 ---
+![Sim_diagram_GT](https://github.com/user-attachments/assets/daa31c8d-d655-4090-9ead-6ca66b8c0369)
 
 ### Electrical Domain (Dark Blue Wires)
 
@@ -20,7 +21,7 @@ energy management strategies.
 
 ---
 
-### Mechanical / Physical Signal Interface (Light Blue Wires)
+### Mechanical / Physical Signal Interface 
 
 Light blue wires represent **Simscape physical signal connections**, typically used for:
 
