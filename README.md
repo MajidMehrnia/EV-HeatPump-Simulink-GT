@@ -25,8 +25,7 @@ The model simulates a mid-size sedan with rear wheel drive and comprises five su
 **Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
 The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
 
-
-![Sim_diagram_GT](https://github.com/user-attachments/assets/ac0e96d3-1697-429e-8811-d3688cbbc42d)
+![Simulink](https://github.com/user-attachments/assets/d713d085-7cfa-4da3-ad61-91fec8a3761a)
 
 The Figure of subsystem illustrates the components responsible for importing data and signals from GT-SUITE into Simulink for co-simulation. 
 These signals enable real-time interaction between the compressor model and the system-level of BEV. 
