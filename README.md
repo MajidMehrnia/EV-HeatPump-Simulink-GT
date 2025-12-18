@@ -29,6 +29,8 @@ used in automotive air-conditioning and thermal management systems.
 - Thermodynamic model: **Two-phase**
 - Phase change: Enabled
 
+  ![Sim_diagram](https://github.com/user-attachments/assets/704761de-3017-44d6-9fd4-ccb86be20123)
+
 
 ## Simulink
 The figure below illustrates the virtual vehicle developed using Simscape and its add-on products. 
