@@ -41,11 +41,12 @@ The control algorithms are implemented in Simulink and are contained in the **Co
 
 ![Simulink](https://github.com/user-attachments/assets/d713d085-7cfa-4da3-ad61-91fec8a3761a)
 
-The Figure of subsystem illustrates the components responsible for importing data and signals from GT-SUITE into Simulink for co-simulation. 
+The Figure of subsystem illustrates the components responsible for importing data and signals from GT-SUITE into Simulink for co-simulation. https://github.com/MajidMehrnia/EV-HeatPump-Simulink-GT/blob/master/README.md
 These signals enable real-time interaction between the compressor model and the system-level of BEV. 
 The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
 
-![GT_COMP](https://github.com/user-attachments/assets/4dbd01b7-b883-4f15-997c-fcee3c1f3beb)
+![GT_COMP](https://github.com/user-attachments/assets/17c7e353-fc0e-48f1-875d-137de1d966c4)
+
 
 
  ## GT-SUITE
