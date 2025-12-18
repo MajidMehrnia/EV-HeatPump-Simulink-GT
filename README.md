@@ -1,7 +1,10 @@
 ## Description
 This repository is based on the EV Thermal Management model developed in Simulink. It contains a model of a battery electric vehicle (BEV) with a thermal management system. This virtual vehicle model was parametrized to describe a mid-size electric sedan [1].
 
-![Refrig_System](https://github.com/user-attachments/assets/a26682d6-5508-41d0-8f68-7bacf7fe6c7b)
+
+![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
+
+
 
 Developed a heat pump co-simulation framework for a battery electric vehicle using GT-SUITE and Simulink, based on a reference EV thermal architecture. The model requires the following products:
 
