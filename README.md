@@ -1,9 +1,12 @@
 ## Description
-This repository is based on the EV Thermal Management model developed in Simscape. It contains a model of a battery electric vehicle (BEV) with a thermal management system. This virtual vehicle model was parametrized to describe a mid-size electric sedan [1].
+This repository is based on the EV Thermal Management model developed in Simulink. It contains a model of a battery electric vehicle (BEV) with a thermal management system. This virtual vehicle model was parametrized to describe a mid-size electric sedan [1].
 
-Developed a heat pump co-simulation framework for a battery electric vehicle using GT-SUITE and Simulink, based on a reference EV thermal architecture. The full refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy.
+Developed a heat pump co-simulation framework for a battery electric vehicle using GT-SUITE and Simulink, based on a reference EV thermal architecture. The model requires the following products:
 
-In this project, due to CPU limitations, only the compressor was modeled. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. The compressor model was developed and simulated in GT-SUITE.
+- MATLAB® R2024a; Simulink®; Simscape™; Stateflow®; Simscape Fluids™; Simscape Battery™;S imscape Driveline™; Simscape Electrical™
+- GT-SUITE
+
+The full refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. In this project, due to CPU limitations, only the compressor was modeled. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. The compressor model was developed and simulated in GT-SUITE.
 
 ### Refrigerant System 
 
@@ -60,6 +63,8 @@ Different sub-models are employed to represent thermodynamic processes, mechanic
 
 Due to GT-SUITE licensing restrictions, the original model files cannot be shared publicly. 
 Therefore, only representative diagrams, descriptions, and co-simulation interfaces are provided in this repository.
+
+## Post-Proccessing
 
 
 ## Support
