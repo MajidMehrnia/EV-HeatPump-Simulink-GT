@@ -7,7 +7,6 @@ In this project, due to CPU limitations, only the compressor was modeled.
 One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. 
 The compressor model was developed and simulated in GT-SUITE.
 
----
 
 ### Refrigerant System 
 
@@ -29,8 +28,6 @@ used in automotive air-conditioning and thermal management systems.
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
 - Phase change: Enabled
-
----
 
 
 ## Simulink
