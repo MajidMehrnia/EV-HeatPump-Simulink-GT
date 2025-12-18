@@ -19,8 +19,7 @@ The full refrigerant system was modeled in GT-SUITE and coupled with Simulink to
 ### Refrigerant System 
 
 The refrigerant cycle comprises compressor, condenser, chiller expansion valve (EV1), evaporator 
-expansion value (EV2), chiller, and evaporator. More information regarding the refrigerant cycle 
-is available at [2].
+expansion value (EV2), chiller, and evaporator. 
 
 The refrigerant flow is driven by the compressor, which is connected to the HV electrical network. 
 The refrigerant flow continues to the condenser where heat is dissipated to the air. The air flow 
@@ -48,7 +47,7 @@ The control algorithms are implemented in Simulink and are contained in the **Co
 
 
 These signals enable real-time interaction between the compressor model and the system-level of BEV. 
-The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
+The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior. More information is available at [2].
 
 
  ## GT-SUITE
