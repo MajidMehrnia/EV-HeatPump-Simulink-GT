@@ -38,14 +38,10 @@ The figure below illustrates the virtual vehicle developed using Simscape and it
 The model simulates a mid-size sedan and comprises five subsystems: 
 **Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
 The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
+![Refrig_System](https://github.com/user-attachments/assets/e632afdb-a61b-4373-a205-7f813e00bd93)
 
-![Sim_diagram_GT](https://github.com/user-attachments/assets/026ee263-8713-4b4a-ba1e-72b41926656b)
-
-The Figure of subsystem illustrates the components responsible for importing data and signals from GT-SUITE into Simulink for co-simulation. https://github.com/MajidMehrnia/EV-HeatPump-Simulink-GT/blob/master/README.md
 These signals enable real-time interaction between the compressor model and the system-level of BEV. 
 The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
-
-![GT_COMP](https://github.com/user-attachments/assets/803c980f-ae46-4892-9c05-e8cdccd10361)
 
 
  ## GT-SUITE
