@@ -8,6 +8,9 @@ Developed a heat pump co-simulation framework for a battery electric vehicle usi
 
 The full refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. In this project, due to CPU limitations, only the compressor was modeled. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. The compressor model was developed and simulated in GT-SUITE.
 
+![Refrig_System](https://github.com/user-attachments/assets/a26682d6-5508-41d0-8f68-7bacf7fe6c7b)
+
+
 ### Refrigerant System 
 
 The refrigerant cycle comprises compressor, condenser, chiller expansion valve (EV1), evaporator 
@@ -28,9 +31,6 @@ used in automotive air-conditioning and thermal management systems.
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
 - Phase change: Enabled
-
-![Refrig_System](https://github.com/user-attachments/assets/cb5b1e28-96b2-404b-80d9-4bfa6c978231)
-
 
 
 ## Simulink
