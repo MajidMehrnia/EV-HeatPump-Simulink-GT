@@ -45,8 +45,7 @@ The Figure of subsystem illustrates the components responsible for importing dat
 These signals enable real-time interaction between the compressor model and the system-level of BEV. 
 The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
 
-![GT_COMP](https://github.com/user-attachments/assets/17c7e353-fc0e-48f1-875d-137de1d966c4)
-
+![GT_COMP](https://github.com/user-attachments/assets/803c980f-ae46-4892-9c05-e8cdccd10361)
 
 
  ## GT-SUITE
