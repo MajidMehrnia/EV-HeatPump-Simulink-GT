@@ -29,7 +29,8 @@ used in automotive air-conditioning and thermal management systems.
 - Thermodynamic model: **Two-phase**
 - Phase change: Enabled
 
-![Refrig_System](https://github.com/user-attachments/assets/97ed8bac-e321-4aed-b6c4-47a502a1afde)
+![Refrig_System](https://github.com/user-attachments/assets/cb5b1e28-96b2-404b-80d9-4bfa6c978231)
+
 
 
 
