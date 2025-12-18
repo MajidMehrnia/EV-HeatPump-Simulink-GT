@@ -1,12 +1,9 @@
 ## Description
 This repository is based on the EV Thermal Management model published by MathWorks (Simscape). It contains a model of a battery electric vehicle (BEV) with a thermal management system. This virtual vehicle model was parametrized to describe a mid-size electric sedan [1].
 
-Developed a Heat Pump co-simulation framework for a Battery Electric Vehicle
-using GT-SUITE and Simulink, based on a reference EV thermal architecture. Simulating the entire refrigerant system in GT-SUITE and coupling it with Simulink can lead to more accurate results. 
-In this project, due to CPU limitations, only the compressor was modeled.
-One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. 
-The compressor model was developed and simulated in GT-SUITE.
+Developed a heat pump co-simulation framework for a battery electric vehicle using GT-SUITE and Simulink, based on a reference EV thermal architecture. The full refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy.
 
+In this project, due to CPU limitations, only the compressor was modeled. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. The compressor model was developed and simulated in GT-SUITE.
 
 ### Refrigerant System 
 
@@ -30,7 +27,6 @@ used in automotive air-conditioning and thermal management systems.
 - Phase change: Enabled
 
 ![Refrig_System](https://github.com/user-attachments/assets/cb5b1e28-96b2-404b-80d9-4bfa6c978231)
-
 
 
 
