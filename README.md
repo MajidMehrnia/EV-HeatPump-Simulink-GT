@@ -38,7 +38,9 @@ The figure below illustrates the virtual vehicle developed using Simscape and it
 The model simulates a mid-size sedan and comprises five subsystems: 
 **Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
 The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
-![Refrig_System](https://github.com/user-attachments/assets/e632afdb-a61b-4373-a205-7f813e00bd93)
+
+![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
+
 
 These signals enable real-time interaction between the compressor model and the system-level of BEV. 
 The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
