@@ -66,6 +66,7 @@ Therefore, only representative diagrams, descriptions, and co-simulation interfa
 
 ## Post-Proccessing
 
+![HF-1](https://github.com/user-attachments/assets/9fea9c4c-e5ea-4322-97cc-bb303d2444aa)
 
 ## Support
 For any questions regarding the model place a comment in the repository.
