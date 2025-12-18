@@ -29,7 +29,8 @@ used in automotive air-conditioning and thermal management systems.
 - Thermodynamic model: **Two-phase**
 - Phase change: Enabled
 
-  ![Sim_diagram](https://github.com/user-attachments/assets/704761de-3017-44d6-9fd4-ccb86be20123)
+![Refrig_System](https://github.com/user-attachments/assets/97ed8bac-e321-4aed-b6c4-47a502a1afde)
+
 
 
 ## Simulink
