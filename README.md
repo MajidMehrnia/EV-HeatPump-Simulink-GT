@@ -30,7 +30,7 @@ The refrigerant then flows through EV1 and EV2 and continues to chiller and evap
 chiller, the refrigerant absorbs heat from the coolant cycle. In the evaporator the refrigerant 
 absorbs heat from the cabin air and continues its way back to the compressor.
 
-The model simulated here is representative of a Valeo-like electric scroll compressor commonly
+The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly
 used in automotive air-conditioning and thermal management systems.
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
