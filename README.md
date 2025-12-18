@@ -9,14 +9,29 @@ The compressor model was developed and simulated in GT-SUITE.
 
 ---
 
-## Refrigerant Model 
+### Refrigerant System 
 
+The refrigerant cycle comprises compressor, condenser, chiller expansion valve (EV1), evaporator 
+expansion value (EV2), chiller, and evaporator. More information regarding the refrigerant cycle 
+is available at [2].
+
+The refrigerant flow is driven by the compressor, which is connected to the HV electrical network. 
+The refrigerant flow continues to the condenser where heat is dissipated to the air. The air flow 
+within the condenser is driven by the vehicle speed the condenser fan. Latter is connected to the 
+LV network.
+
+The refrigerant then flows through EV1 and EV2 and continues to chiller and evaporator. In the 
+chiller, the refrigerant absorbs heat from the coolant cycle. In the evaporator the refrigerant 
+absorbs heat from the cabin air and continues its way back to the compressor.
+
+The model simulated here is representative of a Valeo-like electric scroll compressor commonly
+used in automotive air-conditioning and thermal management systems.
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
-- Phase change: Enabled 
+- Phase change: Enabled
+
 ---
-The model is representative of a Valeo-like electric scroll compressor commonly
-used in automotive air-conditioning and thermal management systems.
+
 
 ## Simulink
 The figure below illustrates the virtual vehicle developed using Simscape and its add-on products. 
