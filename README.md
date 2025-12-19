@@ -15,6 +15,7 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 - Thermodynamic model: **Two-phase**
 - Phase change: Enabled
 
+The figure below illustrates how the refrigerant system interacts with the other components of the vehicle thermal management architecture.
 
 ![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
 
