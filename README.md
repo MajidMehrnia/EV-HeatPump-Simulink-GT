@@ -42,7 +42,7 @@ The model simulates the thermodynamic behavior of a closed-loop refrigerant cycl
 
 The figure below shows refrigerant system architecture in GT-SUITE. 
 
-                                               ![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
+![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
 
 #### Compressor
 The compressor increases the pressure and temperature of the refrigerant vapor. Low-pressure vapor exiting the evaporator is compressed and delivered to the condenser.  
@@ -79,7 +79,7 @@ Initialization blocks ensure numerical stability and proper convergence at the s
 This model is intended for simulation and research purposes. Results depend on refrigerant properties, boundary conditions, and component map accuracy.
 
 ## Simulink
-In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  The model simulates a mid-size sedan and comprises five subsystems: 
+In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  The model comprises five subsystems: 
 **Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
 The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
 
