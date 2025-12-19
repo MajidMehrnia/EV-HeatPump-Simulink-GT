@@ -6,15 +6,27 @@ Developed a heat pump co-simulation framework for a battery electric vehicle usi
 - GT-SUITE
 
 The full refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. In this project, due to CPU limitations, only the compressor was modeled. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. The compressor model was developed and simulated in GT-SUITE.
-
+The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems.
+- Refrigerant: **R1234yf**
+- Thermodynamic model: **Two-phase**
+- Phase change: Enabled
 
 
 ![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
 
 
 
+## Simulink
+The figure below illustrates the virtual vehicle developed using Simscape and its add-on products. 
+The model simulates a mid-size sedan and comprises five subsystems: 
+**Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
+The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
+
+![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
 
 
+These signals enable real-time interaction between the compressor model and the system-level of BEV. 
+The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior. More information is available at [2].
 
 ### Refrigerant System 
 
@@ -29,25 +41,6 @@ LV network.
 The refrigerant then flows through EV1 and EV2 and continues to chiller and evaporator. In the 
 chiller, the refrigerant absorbs heat from the coolant cycle. In the evaporator the refrigerant 
 absorbs heat from the cabin air and continues its way back to the compressor.
-
-The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly
-used in automotive air-conditioning and thermal management systems.
-- Refrigerant: **R1234yf**
-- Thermodynamic model: **Two-phase**
-- Phase change: Enabled
-
-
-## Simulink
-The figure below illustrates the virtual vehicle developed using Simscape and its add-on products. 
-The model simulates a mid-size sedan and comprises five subsystems: 
-**Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
-The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
-
-![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
-
-
-These signals enable real-time interaction between the compressor model and the system-level of BEV. 
-The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior. More information is available at [2].
 
 
  ## GT-SUITE
