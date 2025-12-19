@@ -82,8 +82,6 @@ Connecting pipes model refrigerant flow between components, including pressure l
 #### Initialization and Control
 Initialization blocks ensure numerical stability and proper convergence at the start of the simulation. Control elements can be implemented to regulate compressor speed or expansion device opening.
 
-#### Notes
-This model is intended for simulation and research purposes. Results depend on refrigerant properties, boundary conditions, and component map accuracy.
 
 ## Simulink
 In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  The model comprises five subsystems: 
@@ -111,6 +109,10 @@ Different sub-models are employed to represent thermodynamic processes, mechanic
 
 Due to GT-SUITE licensing restrictions, the original model files cannot be shared publicly. 
 Therefore, only representative diagrams, descriptions, and co-simulation interfaces are provided in this repository.
+
+## CFD
+
+The CFD simulation of the refrigerant system is currently under development.
 
 ## Post-processing
 
