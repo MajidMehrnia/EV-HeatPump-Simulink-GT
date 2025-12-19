@@ -1,10 +1,10 @@
 ## Electric Vehicle (EV) Thermal Management System Design  
 
-This repository is based on an EV thermal management model originally developed in **Simulink**. It includes a virtual **Battery Electric Vehicle (BEV)** equipped with an integrated thermal management system. The vehicle model is parameterized to represent a **mid-size electric sedan** [1].
+This repository is based on an EV thermal management model originally developed in Simulink. It includes a virtual Battery Electric Vehicle (BEV) equipped with an integrated thermal management system. The vehicle model is parameterized to represent a mid-size electric sedan [1].
 
-In addition to the Simulink implementation, the **refrigerant-based thermal management system** is also modeled independently in **GT-SUITE**. This enables a detailed system-level representation of the vapor compression cycle, including the compressor, condenser, expansion device, and evaporator, with high-fidelity thermodynamic and component performance modeling.
+In addition to the Simulink implementation, the refrigerant-based thermal management system is also modeled independently in GT-SUITE. This enables a detailed system-level representation of the vapor compression cycle, including the compressor, condenser, expansion device, and evaporator, with high-fidelity thermodynamic and component performance modeling.
 
-Furthermore, a **high-resolution CFD model** of the refrigerant system and key thermal components is developed to capture detailed flow and heat transfer phenomena that are not fully resolved in 1D system-level models.
+Furthermore, a high-resolution CFD model of the refrigerant system and key thermal components is developed to capture detailed flow and heat transfer phenomena that are not fully resolved in 1D system-level models.
 
 The combined use of **Simulink (control-oriented modeling)**, **GT-SUITE (1D thermodynamic system modeling)**, and **CFD (3D high-fidelity analysis)** provides a comprehensive multi-fidelity framework. This approach enables cross-validation of results, in-depth comparison of system behavior at different modeling levels, and more robust performance analysis and design optimization of the EV thermal management system.
 
