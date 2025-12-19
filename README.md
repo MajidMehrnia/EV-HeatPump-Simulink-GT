@@ -20,7 +20,7 @@ The figure below illustrates how the refrigerant system interacts with the other
 ![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
 
 
-### Refrigerant System 
+## Refrigerant System 
 
 The refrigerant cycle comprises compressor, condenser, chiller expansion valve (EV1), evaporator 
 expansion value (EV2), chiller, and evaporator. 
@@ -36,13 +36,13 @@ absorbs heat from the cabin air and continues its way back to the compressor. R1
 
 
 
-## Refrigerant System Architecture (GT-SUITE)
+### Refrigerant System Architecture (GT-SUITE)
 
 The model simulates the thermodynamic behavior of a closed-loop refrigerant cycle and is intended for system-level performance analysis and component evaluation. The refrigerant circulates through the system, undergoing pressure and phase changes to absorb heat from the evaporator and reject it through the condenser.
 
 The figure below shows refrigerant system architecture in GT-SUITE. 
 
-![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
+                                               ![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
 
 #### Compressor
 The compressor increases the pressure and temperature of the refrigerant vapor. Low-pressure vapor exiting the evaporator is compressed and delivered to the condenser.  
