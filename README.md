@@ -20,18 +20,6 @@ The figure below illustrates how the refrigerant system interacts with the other
 ![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
 
 
-## Simulink
-The figure below illustrates the virtual vehicle developed using Simscape and its add-on products. 
-The model simulates a mid-size sedan and comprises five subsystems: 
-**Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
-The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
-
-![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
-
-
-These signals enable real-time interaction between the compressor model and the system-level of BEV. 
-The served fluid is a two-phase refrigerant. More information is available at [2].
-
 ### Refrigerant System 
 
 The refrigerant cycle comprises compressor, condenser, chiller expansion valve (EV1), evaporator 
@@ -56,48 +44,56 @@ The figure below shows refrigerant system architecture in GT-SUITE.
 
 ![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
 
-### Compressor
+# Compressor
 The compressor increases the pressure and temperature of the refrigerant vapor. Low-pressure vapor exiting the evaporator is compressed and delivered to the condenser.  
 Compressor behavior is modeled using performance maps to represent mass flow rate, efficiency, and power consumption under varying operating conditions.
 
 ---
 
-### Condenser
+# Condenser
 The condenser is a heat exchanger where the high-pressure refrigerant rejects heat to the ambient environment. During this process, the refrigerant condenses from vapor to liquid.  
 The model accounts for heat transfer and pressure losses across the condenser.
 
 ---
 
-### Expansion Device
-The expansion device (orifice or expansion valve) reduces the pressure of the liquid refrigerant leaving the condenser. This throttling process causes a temperature drop and prepares the refrigerant for evaporation.  
-The expansion process is modeled as an isenthalpic flow with associated pressure drop.
+# Expansion Device
+The expansion valve reduces the pressure of the liquid refrigerant leaving the condenser. This throttling process causes a temperature drop and prepares the refrigerant for evaporation. The expansion process is modeled as an isenthalpic flow with associated pressure drop.
 
 ---
 
-### Evaporator
+# Evaporator
 The evaporator absorbs heat from the cooling load. The low-pressure refrigerant evaporates while flowing through the evaporator and exits as superheated vapor.  
 The evaporator model captures phase change behavior and heat transfer to predict cooling capacity accurately.
 
 ---
 
-## Pipes and Junctions
+# Pipes and Junctions
 Connecting pipes model refrigerant flow between components, including pressure losses and thermal interactions. Junctions manage connectivity and flow direction within the system.
 
 ---
 
-## Initialization and Control
+# Initialization and Control
 Initialization blocks ensure numerical stability and proper convergence at the start of the simulation. Control elements can be implemented to regulate compressor speed or expansion device opening.
 
 ---
 
-## Notes
+# Notes
 This model is intended for simulation and research purposes. Results depend on refrigerant properties, boundary conditions, and component map accuracy.
 
+## Simulink
+In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  The model simulates a mid-size sedan and comprises five subsystems: 
+**Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
+The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
 
+![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
+
+
+These signals enable real-time interaction between the compressor model and the system-level of BEV. 
+The served fluid is a two-phase refrigerant. More information is available at [2].
 
  ## GT-SUITE
 
-In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models.Detailed compressor model implemented in GT-SUITE and coupled with Simulink through co-simulation. 
+One of the main challenges in this co-simulation was handling the time-step mismatch between the two models.Detailed compressor model implemented in GT-SUITE and coupled with Simulink through co-simulation. 
 The GT-SUITE model represents the thermodynamic and mechanical behavior of the compressor, 
 while Simulink manages the system-level control and signal exchange. 
 
