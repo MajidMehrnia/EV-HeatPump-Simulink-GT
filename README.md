@@ -1,11 +1,15 @@
-## Description
-This repository is based on the EV Thermal Management model developed in Simulink. It contains a model of a battery electric vehicle (BEV) with a thermal management system. This virtual vehicle model was parametrized to describe a mid-size electric sedan [1].
-Developed a heat pump co-simulation framework for a battery electric vehicle using GT-SUITE and Simulink, based on a reference EV thermal architecture. The model requires the following products:
+## Electric Vehicle (EV) Thermal Management System Design  
 
-- MATLAB® R2024a; Simulink®; Simscape™; Simscape Fluids™; Simscape Battery™; Simscape Driveline™; Simscape Electrical™; Stateflow®
+This repository is based on the EV thermal management model developed in Simulink. It contains a model of a Battery Electric Vehicle (BEV) with a thermal management system. This virtual vehicle model was parametrized to describe a mid-size electric sedan [1].
+
+## Description
+
+Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUITE, based on a reference EV thermal architecture. The model requires the following products:
+
+- MATLAB® R2024a: Simulink®; Simscape™; Simscape Fluids™; Simscape Battery™; Simscape Driveline™; Simscape Electrical™; Stateflow®
 - GT-SUITE
 
-The full refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. In this project, due to CPU limitations, only the compressor was modeled. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. The compressor model was developed and simulated in GT-SUITE.
+The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. In this project, due to CPU limitations, only the compressor was modeled. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. The compressor model was developed and simulated in GT-SUITE.
 The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems.
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
