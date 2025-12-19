@@ -26,7 +26,7 @@ The control algorithms are implemented in Simulink and are contained in the **Co
 
 
 These signals enable real-time interaction between the compressor model and the system-level of BEV. 
-The served fluid is a two-phase refrigerant. R1234yf is used to accurately represent phase-change and thermodynamic behavior. More information is available at [2].
+The served fluid is a two-phase refrigerant. More information is available at [2].
 
 ### Refrigerant System 
 
@@ -40,7 +40,7 @@ LV network.
 
 The refrigerant then flows through EV1 and EV2 and continues to chiller and evaporator. In the 
 chiller, the refrigerant absorbs heat from the coolant cycle. In the evaporator the refrigerant 
-absorbs heat from the cabin air and continues its way back to the compressor.
+absorbs heat from the cabin air and continues its way back to the compressor. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
 
 
  ## GT-SUITE
