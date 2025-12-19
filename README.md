@@ -15,6 +15,7 @@ Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUIT
 
 - MATLAB® R2024a: Simulink®; Simscape™; Simscape Fluids™; Simscape Battery™; Simscape Driveline™; Simscape Electrical™; Stateflow®
 - GT-SUITE
+- Ansys Workbench
 
 The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. The compressor model was developed and simulated in GT-SUITE.
 The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems.
