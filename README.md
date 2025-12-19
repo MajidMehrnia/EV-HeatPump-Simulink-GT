@@ -9,7 +9,7 @@ Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUIT
 - MATLAB® R2024a: Simulink®; Simscape™; Simscape Fluids™; Simscape Battery™; Simscape Driveline™; Simscape Electrical™; Stateflow®
 - GT-SUITE
 
-The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. In this project, due to CPU limitations, only the compressor was modeled. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models. The compressor model was developed and simulated in GT-SUITE.
+The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. The compressor model was developed and simulated in GT-SUITE.
 The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems.
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
@@ -18,7 +18,6 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 The figure below illustrates how the refrigerant system interacts with the other components of the vehicle thermal management architecture.
 
 ![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
-
 
 
 ## Simulink
@@ -48,9 +47,57 @@ chiller, the refrigerant absorbs heat from the coolant cycle. In the evaporator 
 absorbs heat from the cabin air and continues its way back to the compressor. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
 
 
+
+## Refrigerant System Architecture (GT-SUITE)
+
+The model simulates the thermodynamic behavior of a closed-loop refrigerant cycle and is intended for system-level performance analysis and component evaluation. The refrigerant circulates through the system, undergoing pressure and phase changes to absorb heat from the evaporator and reject it through the condenser.
+
+The figure below shows refrigerant system architecture in GT-SUITE. 
+
+![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
+
+### Compressor
+The compressor increases the pressure and temperature of the refrigerant vapor. Low-pressure vapor exiting the evaporator is compressed and delivered to the condenser.  
+Compressor behavior is modeled using performance maps to represent mass flow rate, efficiency, and power consumption under varying operating conditions.
+
+---
+
+### Condenser
+The condenser is a heat exchanger where the high-pressure refrigerant rejects heat to the ambient environment. During this process, the refrigerant condenses from vapor to liquid.  
+The model accounts for heat transfer and pressure losses across the condenser.
+
+---
+
+### Expansion Device
+The expansion device (orifice or expansion valve) reduces the pressure of the liquid refrigerant leaving the condenser. This throttling process causes a temperature drop and prepares the refrigerant for evaporation.  
+The expansion process is modeled as an isenthalpic flow with associated pressure drop.
+
+---
+
+### Evaporator
+The evaporator absorbs heat from the cooling load. The low-pressure refrigerant evaporates while flowing through the evaporator and exits as superheated vapor.  
+The evaporator model captures phase change behavior and heat transfer to predict cooling capacity accurately.
+
+---
+
+## Pipes and Junctions
+Connecting pipes model refrigerant flow between components, including pressure losses and thermal interactions. Junctions manage connectivity and flow direction within the system.
+
+---
+
+## Initialization and Control
+Initialization blocks ensure numerical stability and proper convergence at the start of the simulation. Control elements can be implemented to regulate compressor speed or expansion device opening.
+
+---
+
+## Notes
+This model is intended for simulation and research purposes. Results depend on refrigerant properties, boundary conditions, and component map accuracy.
+
+
+
  ## GT-SUITE
 
-Detailed compressor model implemented in GT-SUITE and coupled with Simulink through co-simulation. 
+In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models.Detailed compressor model implemented in GT-SUITE and coupled with Simulink through co-simulation. 
 The GT-SUITE model represents the thermodynamic and mechanical behavior of the compressor, 
 while Simulink manages the system-level control and signal exchange. 
 
