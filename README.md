@@ -72,12 +72,6 @@ The evaporator absorbs heat from the cooling load. The low-pressure refrigerant 
 The evaporator model captures phase change behavior and heat transfer to predict cooling capacity accurately.
 
 
-
-#### Pipes and Junctions
-Connecting pipes model refrigerant flow between components, including pressure losses and thermal interactions. Junctions manage connectivity and flow direction within the system.
-
-
-
 #### Initialization and Control
 Initialization blocks ensure numerical stability and proper convergence at the start of the simulation. Control elements can be implemented to regulate compressor speed or expansion device opening.
 
