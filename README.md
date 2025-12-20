@@ -46,7 +46,7 @@ absorbs heat from the cabin air and continues its way back to the compressor. R1
 
 The model simulates the thermodynamic behavior of a closed-loop refrigerant cycle and is intended for system-level performance analysis and component evaluation. The refrigerant circulates through the system, undergoing pressure and phase changes to absorb heat from the evaporator and reject it through the condenser.
 
-The figure below shows refrigerant system architecture in GT-SUITE. 
+The figure below shows H/P system architecture in GT-SUITE. 
 
 ![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
 
