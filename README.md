@@ -4,9 +4,8 @@ This repository is based on an EV thermal management model originally developed 
 
 In addition to the Simulink implementation, the refrigerant-based thermal management system is also modeled independently in GT-SUITE. This enables a detailed system-level representation of the vapor compression cycle, including the compressor, condenser, expansion device, and evaporator, with high-fidelity thermodynamic and component performance modeling.
 
-Furthermore, a high-resolution CFD model of the refrigerant system and key thermal components is developed to capture detailed flow and heat transfer phenomena that are not fully resolved in 1D system-level models.
 
-The combined use of **Simulink (control-oriented modeling)**, **GT-SUITE (1D thermodynamic system modeling)**, and **CFD (3D high-fidelity analysis)** provides a comprehensive multi-fidelity framework. This approach enables cross-validation of results, in-depth comparison of system behavior at different modeling levels, and more robust performance analysis and design optimization of the EV thermal management system.
+The combined use of **Simulink (control-oriented modeling)**, **GT-SUITE (1D thermodynamic system modeling)**, and **CFD (3D high-fidelity analysis)** provides a comprehensive multi-fidelity framework. The CFD approach enables cross-validation of results, in-depth comparison of system behavior at different modeling levels, and more robust performance analysis and design optimization of the EV thermal management system. 
 
 
 ## Description
@@ -15,7 +14,6 @@ Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUIT
 
 - MATLAB® R2024a: Simulink®; Simscape™; Simscape Fluids™; Simscape Battery™; Simscape Driveline™; Simscape Electrical™; Stateflow®
 - GT-SUITE
-- Ansys Workbench
 
 The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. The compressor model was developed and simulated in GT-SUITE.
 The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems.
@@ -111,9 +109,6 @@ Different sub-models are employed to represent thermodynamic processes, mechanic
 Due to GT-SUITE licensing restrictions, the original model files cannot be shared publicly. 
 Therefore, only representative diagrams, descriptions, and co-simulation interfaces are provided in this repository.
 
-## CFD
-
-The CFD simulation of the refrigerant system is currently under development.
 
 ## Post-processing
 
