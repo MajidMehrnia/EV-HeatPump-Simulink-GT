@@ -110,7 +110,8 @@ The post-processing of the thermal simulation results focuses on resolving spati
 
 ![HF-1](https://github.com/user-attachments/assets/fb5129f6-1613-4d2b-b10b-ad0c8af4b93c)
 
-![T_vs_t_Motor_Battery](https://github.com/user-attachments/assets/e7b0dd69-a436-415c-8197-b1ca8c86dfc8)
+
+![T_vs_t_Motor_Battery](https://github.com/user-attachments/assets/89b781d3-7db0-4915-a8e4-b0e6ec3250a5)
 
 
 
