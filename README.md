@@ -110,6 +110,7 @@ The post-processing of the thermal simulation results focuses on resolving spati
 
 ![HF-1](https://github.com/user-attachments/assets/fb5129f6-1613-4d2b-b10b-ad0c8af4b93c)
 
+![T_vs_t_Motor_Battery](https://github.com/user-attachments/assets/3f074cd9-2166-4b6d-8b39-e0a7cf87171e)
 
 
 Temperature distribution results indicate that maximum cell temperature is not governed by total heat generation alone, but by the internal thermal resistance chain spanning cell core, casing, interface materials, and cooling plate conduction. Post-processed temperature gradients across the battery module reveal that once coolant inlet temperature and flow rate exceed a threshold, further improvements in convective heat transfer yield diminishing returns. This confirms that the system operates in a conduction-limited regime during high load events, where contact resistance and through-plane conductivity dominate over fluid-side heat transfer coefficients. Consequently, regions of elevated temperature align spatially with regions of highest heat flux density rather than with coolant flow maldistribution.
