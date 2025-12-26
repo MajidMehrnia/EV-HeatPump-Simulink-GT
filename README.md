@@ -4,7 +4,7 @@ This repository is based on an EV thermal management model originally developed 
 
 In addition to the Simulink implementation, the refrigerant-based thermal management system is also modeled independently in GT-SUITE. This enables a detailed system-level representation of the vapor compression cycle, including the compressor, condenser, expansion device, and evaporator, with high-fidelity thermodynamic and component performance modeling.
 
-The combined use of **Simulink (control-oriented modeling)**, **GT-SUITE (1D thermodynamic system modeling)**, and **CFD (3D high-fidelity analysis)** provides a comprehensive multi-fidelity framework. 
+The combined use of **Simulink (control-oriented modeling)** and **GT-SUITE ( Hybrid [CAD to 1D]  multi-physics simulation)** provides a comprehensive multi-fidelity framework. 
 
 
 ## Description
