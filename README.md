@@ -4,8 +4,7 @@ This repository is based on an EV thermal management model originally developed 
 
 In addition to the Simulink implementation, the refrigerant-based thermal management system is also modeled independently in GT-SUITE. This enables a detailed system-level representation of the vapor compression cycle, including the compressor, condenser, expansion device, and evaporator, with high-fidelity thermodynamic and component performance modeling.
 
-
-The combined use of **Simulink (control-oriented modeling)**, **GT-SUITE (1D thermodynamic system modeling)**, and **CFD (3D high-fidelity analysis)** provides a comprehensive multi-fidelity framework. The CFD approach enables cross-validation of results, in-depth comparison of system behavior at different modeling levels, and more robust performance analysis and design optimization of the EV thermal management system. 
+The combined use of **Simulink (control-oriented modeling)**, **GT-SUITE (1D thermodynamic system modeling)**, and **CFD (3D high-fidelity analysis)** provides a comprehensive multi-fidelity framework. 
 
 
 ## Description
@@ -16,7 +15,8 @@ Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUIT
 - GT-SUITE
 
 The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. The compressor model was developed and simulated in GT-SUITE.
-The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems.
+The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems. 
+For a **Scroll** compressor, a novel direct approach is to use a 3D CAD model of the fixed and orbiting scrolls to obtain volume and area profiles for constructing a one-dimensional (1-D) fluid dynamic model.
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
 - Phase change: Enabled
