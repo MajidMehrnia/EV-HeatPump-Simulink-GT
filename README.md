@@ -52,7 +52,10 @@ The figure below shows H/P system architecture in GT-SUITE.
 
 #### Compressor
 The compressor increases the pressure and temperature of the refrigerant vapor. Low-pressure vapor exiting the evaporator is compressed and delivered to the condenser.  
-Compressor behavior is modeled using performance maps to represent mass flow rate, efficiency, and power consumption under varying operating conditions.
+For a scroll compressor, a novel direct approach involves using a 3D CAD model of the fixed and orbiting scrolls to obtain volume and area profiles for the construction of a one-dimensional fluid dynamic model. (This method is in process...)
+
+
+![GT_Scroll](https://github.com/user-attachments/assets/334a67f6-0d5a-42d4-8491-0dca461c959f)
 
 
 
