@@ -16,7 +16,7 @@ Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUIT
 
 The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. The compressor model was developed and simulated in GT-SUITE.
 The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems. 
-For a Scroll , a novel direct approach is to use a 3D model of the fixed and orbiting scrolls to obtain volume and area profiles for constructing a one-dimensional (1D) fluid dynamic model.
+For a scroll compressor, a novel direct approach can use a 3D model of the fixed and orbiting scrolls to obtain volume and area profiles for constructing a one-dimensional (1D) fluid dynamic model.
 - Compressor: **Scroll**
 - Refrigerant: **R1234yf**
 - Thermodynamic model: **Two-phase**
