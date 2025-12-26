@@ -19,7 +19,7 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 For a scroll compressor, a novel direct approach can use a 3D model of the fixed and orbiting scrolls to obtain volume and area profiles for constructing a one-dimensional (1D) fluid dynamic model.
 - Compressor: **Scroll**
 - Refrigerant: **R1234yf**
-- Thermodynamic model: **Two-phase**
+- Thermodynamic model of H/P system: **Two-phase**
 - Phase change: Enabled
 
 The figure below illustrates how the refrigerant system interacts with the other components of the vehicle thermal management architecture.
