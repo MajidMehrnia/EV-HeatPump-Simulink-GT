@@ -19,8 +19,8 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 
 - Compressor type: **Scroll**
 - Compressor modeling approaches:
-1. Simple 1D map-based model
-2. Hybrid model (3D to 1D)
+ 1. Simple 1D map-based model
+ 2. Hybrid model (3D to 1D)
 - Refrigerant: **R1234yf**
 - Thermodynamic model of H/P system: **Two-phase**
 
