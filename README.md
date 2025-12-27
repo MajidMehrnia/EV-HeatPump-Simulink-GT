@@ -79,26 +79,6 @@ Different sub-models are employed to represent thermodynamic processes, mechanic
 Due to GT-SUITE licensing restrictions, the original model files cannot be shared publicly. 
 Therefore, only representative diagrams, descriptions, and co-simulation interfaces are provided in this repository.
 
-#### Condenser
-The condenser is a heat exchanger where the high-pressure refrigerant rejects heat to the ambient environment. During this process, the refrigerant condenses from vapor to liquid.  
-The model accounts for heat transfer and pressure losses across the condenser.
-
-
-
-#### Expansion Device
-The expansion valve reduces the pressure of the liquid refrigerant leaving the condenser. This throttling process causes a temperature drop and prepares the refrigerant for evaporation. The expansion process is modeled as an isenthalpic flow with associated pressure drop.
-
-
-
-#### Evaporator
-The evaporator absorbs heat from the cooling load. The low-pressure refrigerant evaporates while flowing through the evaporator and exits as superheated vapor.  
-The evaporator model captures phase change behavior and heat transfer to predict cooling capacity accurately.
-
-
-#### Initialization and Control
-Initialization blocks ensure numerical stability and proper convergence at the start of the simulation. Control elements can be implemented to regulate compressor speed or expansion device opening.
-
-
 ## Post-processing
 
 The post-processing of the thermal simulation results focuses on resolving spatial and temporal heat flux distributions within the battery pack and their coupling to the coolant loop. Cell-level heat generation is computed internally from the electrical model and exported as a time-resolved thermal power signal, which is subsequently mapped to the thermal network. The resulting heat flux at the cell–cooling plate interface represents the effective thermal load imposed on the BTMS and varies strongly with drive cycle transients. Peak heat flux events correlate with high current demand phases rather than steady-state operation, highlighting the importance of transient thermal capacity over nominal cooling power when sizing the thermal interfaces.
@@ -107,11 +87,6 @@ The post-processing of the thermal simulation results focuses on resolving spati
 
 
 ![T_vs_t_Motor_Battery](https://github.com/user-attachments/assets/4584f388-d131-4fe7-b464-d656eb21eac0)
-
-
-
-
-
 
 
 Temperature distribution results indicate that maximum cell temperature is not governed by total heat generation alone, but by the internal thermal resistance chain spanning cell core, casing, interface materials, and cooling plate conduction. Post-processed temperature gradients across the battery module reveal that once coolant inlet temperature and flow rate exceed a threshold, further improvements in convective heat transfer yield diminishing returns. This confirms that the system operates in a conduction-limited regime during high load events, where contact resistance and through-plane conductivity dominate over fluid-side heat transfer coefficients. Consequently, regions of elevated temperature align spatially with regions of highest heat flux density rather than with coolant flow maldistribution.
