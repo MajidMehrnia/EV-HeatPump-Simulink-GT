@@ -23,11 +23,10 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 - Thermodynamic model of H/P system: **Two-phase**
 
 
-The figure below illustrates how the refrigerant system interacts with the other components of the vehicle thermal management architecture.
+The figure below illustrates how the refrigerant system interacts with the other components of the vehicle thermal management architecture in the Simulink.
 
 ![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
 
-### Simulink
 In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  The model comprises five subsystems: 
 **Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
 The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
