@@ -27,6 +27,16 @@ The figure below illustrates how the refrigerant system interacts with the other
 
 ![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
 
+### Simulink
+In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  The model comprises five subsystems: 
+**Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
+The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
+
+![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
+
+
+These signals enable real-time interaction between the compressor model and the system-level of BEV. 
+The served fluid is a two-phase refrigerant. More information is available at [2].
 
 ## Refrigerant System 
 
@@ -39,14 +49,13 @@ within the condenser is driven by the vehicle speed the condenser fan. Latter is
 LV network.
 
 The refrigerant then flows through EV1 and EV2 and continues to chiller and evaporator. In the 
-chiller, the refrigerant absorbs heat from the coolant cycle. In the evaporator the refrigerant 
-absorbs heat from the cabin air and continues its way back to the compressor. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
+chiller, the refrigerant absorbs heat from the coolant cycle. In the evaporator the refrigerant absorbs heat from the cabin air and continues its way back to the compressor. R1234yf is used to accurately represent phase-change and thermodynamic behavior.
 
 
 
-### Refrigerant System Architecture (GT-SUITE)
+### Heat pump System Architecture (GT-SUITE)
 
-The model simulates the thermodynamic behavior of a closed-loop refrigerant cycle and is intended for system-level performance analysis and component evaluation. The refrigerant circulates through the system, undergoing pressure and phase changes to absorb heat from the evaporator and reject it through the condenser.
+The GT-SUITE model represents the thermodynamic and mechanical behavior of the Heat Pump, while Simulink manages the system-level control and signal exchange. The model simulates the thermodynamic behavior of a closed-loop refrigerant cycle and is intended for system-level performance analysis and component evaluation. The refrigerant circulates through the system, undergoing pressure and phase changes to absorb heat from the evaporator and reject it through the condenser.
 
 The figure below shows H/P system architecture in GT-SUITE. 
 
@@ -54,12 +63,22 @@ The figure below shows H/P system architecture in GT-SUITE.
 
 #### Compressor
 The compressor increases the pressure and temperature of the refrigerant vapor. Low-pressure vapor exiting the evaporator is compressed and delivered to the condenser.  
-For a scroll compressor, a novel direct approach involves using a 3D CAD model of the fixed and orbiting scrolls to obtain volume and area profiles for the construction of a one-dimensional fluid dynamic model (This method is in process...). The figure below presents a high-fidelity 1D hybrid approach for simulating a scroll compressor, demonstrating excellent agreement with test data.
+For a scroll compressor, a novel direct approach involves using a 3D CAD model of the fixed and orbiting scrolls to obtain volume and area profiles for the construction of a one-dimensional fluid dynamic model. The figure below presents a high-fidelity 1D hybrid approach for simulating a scroll compressor, demonstrating excellent agreement with test data.
 
 
 ![GT_Scroll](https://github.com/user-attachments/assets/334a67f6-0d5a-42d4-8491-0dca461c959f)
 
+In this project, the scroll compressor is initially modeled using a simple one-dimensional (1D) map-based approach implemented in GT-SUITE. The compressor performance is defined through manufacturer-provided performance maps, which describe the refrigerant mass flow rate and compressor power consumption as functions of suction and discharge pressures, suction temperature, and compressor rotational speed. These maps inherently account for internal losses, including leakage, and heat transfer effects, without explicitly resolving the internal flow field. The compressor is therefore treated as a black-box component, enabling efficient and robust system-level simulations of the two-phase heat pump cycle. This modeling approach provides fast convergence and low computational cost, making it well suited for parametric studies and control-oriented analyses.
 
+![GT-SUITE_blocks](https://github.com/user-attachments/assets/fef207ef-334b-4d06-adff-b759e48033e8)
+
+
+The refrigerant compressor is modeled and simulated in GT-SUITE using its dedicated thermo-fluid and mechanical component libraries. 
+The model captures key compressor behaviors, including mass flow rate, pressure ratio, efficiency, and dynamic response under varying operating conditions. 
+Different sub-models are employed to represent thermodynamic processes, mechanical losses, and control-relevant dynamics. One of the main challenges in this co-simulation was handling the time-step mismatch between the two models.Detailed compressor model implemented in GT-SUITE and coupled with Simulink through co-simulation. 
+
+Due to GT-SUITE licensing restrictions, the original model files cannot be shared publicly. 
+Therefore, only representative diagrams, descriptions, and co-simulation interfaces are provided in this repository.
 
 #### Condenser
 The condenser is a heat exchanger where the high-pressure refrigerant rejects heat to the ambient environment. During this process, the refrigerant condenses from vapor to liquid.  
@@ -79,34 +98,6 @@ The evaporator model captures phase change behavior and heat transfer to predict
 
 #### Initialization and Control
 Initialization blocks ensure numerical stability and proper convergence at the start of the simulation. Control elements can be implemented to regulate compressor speed or expansion device opening.
-
-
-## Simulink
-In this project, due to CPU limitations, only the compressor model of GT-SUITE was linked to Simulink. The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  The model comprises five subsystems: 
-**Electric Powertrain**, **Driveline**, **Refrigerant Cycle**, **Coolant Cycle**, and **Cabin Cycle**. 
-The control algorithms are implemented in Simulink and are contained in the **Controls** subsystem.
-
-![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
-
-
-These signals enable real-time interaction between the compressor model and the system-level of BEV. 
-The served fluid is a two-phase refrigerant. More information is available at [2].
-
- ## GT-SUITE
-
-One of the main challenges in this co-simulation was handling the time-step mismatch between the two models.Detailed compressor model implemented in GT-SUITE and coupled with Simulink through co-simulation. 
-The GT-SUITE model represents the thermodynamic and mechanical behavior of the compressor, 
-while Simulink manages the system-level control and signal exchange. 
-
-![GT-SUITE_blocks](https://github.com/user-attachments/assets/fef207ef-334b-4d06-adff-b759e48033e8)
-
-
-The refrigerant compressor is modeled and simulated in GT-SUITE using its dedicated thermo-fluid and mechanical component libraries. 
-The model captures key compressor behaviors, including mass flow rate, pressure ratio, efficiency, and dynamic response under varying operating conditions. 
-Different sub-models are employed to represent thermodynamic processes, mechanical losses, and control-relevant dynamics.
-
-Due to GT-SUITE licensing restrictions, the original model files cannot be shared publicly. 
-Therefore, only representative diagrams, descriptions, and co-simulation interfaces are provided in this repository.
 
 
 ## Post-processing
