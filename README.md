@@ -18,7 +18,7 @@ The refrigerant system was modeled in GT-SUITE and coupled with Simulink to impr
 The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems. 
 
 - Compressor type: **Scroll**
-- Compressor modeling approaches: (i)Simple 1D map-based model, (ii)Hybrid model (3D to 1D) 
+- Compressor modeling approaches: (i) Simple 1D map-based model; (ii) Hybrid model (3D to 1D) 
 - Refrigerant: **R1234yf**
 - Thermodynamic model of H/P system: **Two-phase**
 
