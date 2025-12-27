@@ -52,7 +52,7 @@ chiller, the refrigerant absorbs heat from the coolant cycle. In the evaporator 
 
 
 
-### Heat pump System Architecture (GT-SUITE)
+### Refrigerant System Architecture (GT-SUITE)
 
 The GT-SUITE model represents the thermodynamic and mechanical behavior of the Heat Pump, while Simulink manages the system-level control and signal exchange. The model simulates the thermodynamic behavior of a closed-loop refrigerant cycle and is intended for system-level performance analysis and component evaluation. The refrigerant circulates through the system, undergoing pressure and phase changes to absorb heat from the evaporator and reject it through the condenser.
 
