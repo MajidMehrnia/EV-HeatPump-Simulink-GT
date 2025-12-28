@@ -17,7 +17,7 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 - Compressor modeling approaches: (i) Simple 1D map-based model; (ii) Hybrid model (3D to 1D) 
 - Refrigerant: **R1234yf**
 
-The main thermodynamic output of the calculations is the **P–h diagram** of the heat pump cycle, as shown in the figure below. For additional results, please refer to the Post-Processing section or the Results folder, where temperature, enthalpy, and entropy values for different parts of the cycle are provided.
+The main thermodynamic output of the calculations is the **P–h diagram** of the heat pump cycle, as shown in the figure below. For additional results, please refer to the Post-Processing section or the Results folder, where temperature, enthalpy, and entropy values for different parts of the cycle are provided. The calculated COP for this cycle is 5.2 at a cabin temperature of 40 °C, which is a reasonable value for this operating condition.
 
  ![P-h_SIM](https://github.com/user-attachments/assets/371ba99f-802b-4d81-b0d0-050c0812df8a)
 
