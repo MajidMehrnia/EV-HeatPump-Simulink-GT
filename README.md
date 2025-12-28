@@ -10,7 +10,7 @@ The combined use of **Simulink (control-oriented modeling)** and **GT-SUITE (1D 
 ## Description
 
 Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUITE, based on a reference EV thermal architecture. 
-The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. The compressor model was developed and simulated in GT-SUITE.
+The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. The compressor model was simulated in GT-SUITE.
 The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems. 
 
 - Compressor type: **Scroll**
@@ -18,7 +18,7 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 - Refrigerant: **R1234yf**
 
 ### Main Thermodynamic Output
-The main thermodynamic output of the calculations is the **P–h diagram** of the heat pump cycle, as shown in the figure below. The calculated COP (based on refrigerant enthalpy difference (cycle COP)) is 5.2 at a cabin temperature of 40 °C, which is a reasonable value for this operating condition. It should be noted that the reported COP was calculated solely based on the refrigerant-side enthalpy differences across the compressor and condenser. The electrical power consumption of the compressor drive, condenser fan, cabin blower, and other auxiliary components was not included in the calculation. Therefore, the presented value represents the cycle (thermodynamic) COP rather than the overall system COP, and the actual system-level COP of the electric vehicle heat pump would be lower. For detailed information, please refer to the [Results](results) folder, where enthalpy, entropy and temperature values for different parts of the cycle are provided.
+The main thermodynamic output of the calculations is the **P–h diagram** of the heat pump cycle, as shown in the figure below. The calculated COP (based on refrigerant enthalpy difference (cycle COP)) is 5.2 at a cabin temperature of 40 °C, which is a reasonable value for this operating condition. It should be noted that the reported COP was calculated solely based on the refrigerant-side enthalpy differences across the compressor and condenser. The electrical power consumption of the compressor drive, condenser fan, cabin blower, and other auxiliary components was not included in the calculation. Therefore, the presented value represents the cycle (thermodynamic) COP rather than the overall system COP, and the actual system-level COP of the electric vehicle heat pump would be lower. For detailed information, please refer to the [Results](results) folder of this project, where enthalpy, entropy and temperature values for different parts of the cycle are provided.
 
 ![P-h_SIM](https://github.com/user-attachments/assets/effea2f7-4077-4bf4-82ef-bf2cce446ec7)
 
