@@ -1,6 +1,6 @@
 The figures below show Entalhphy, Entropy and temperatures for inlet and oulet of Compressor and Condenser. 
 
-<img src="<img width="711" height="388" alt="image_2025-12-28_10-38-50" src="https://github.com/user-attachments/assets/21ecd59c-46c8-4735-8104-6e29d8a9c625" alt="Condenser output sensor" width="300"/>
+<img src="https://github.com/user-attachments/assets/21ecd59c-46c8-4735-8104-6e29d8a9c625" alt="Condenser output sensor" width="300"/>
 
 
 
