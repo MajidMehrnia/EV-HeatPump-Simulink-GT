@@ -3,12 +3,13 @@ The figures below show Enthalpy, Entropy and temperatures for inlet and oulet of
 *Condenser outlet sensor*
 ![Data Flow Diagram](https://github.com/user-attachments/assets/21ecd59c-46c8-4735-8104-6e29d8a9c625)
 
+
 *Condenser inlet sensor*
 ![Data Flow Diagram](https://github.com/user-attachments/assets/65fe0d76-d3fc-440f-b0e1-c099d6f548df)
 
+
 *Compressor inlet sensor*
-![Data Flow Diagram](<img width="705" height="395" alt="image_2025-12-28_10-37-15" src="https://github.com/user-attachments/assets/6f37f241-2ef8-44d6-821a-bb2ce4756a1c" />
-)
+![Data Flow Diagram](https://github.com/user-attachments/assets/6f37f241-2ef8-44d6-821a-bb2ce4756a1c)
 
 
 
