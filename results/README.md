@@ -1,4 +1,4 @@
-The figures below show Enthalpy, Entropy and temperatures for inlet and oulet of Compressor and Condenser. 
+The figures below show Enthalpy, Entropy and temperatures for inlet and outlet of Compressor and Condenser. 
 
 *Condenser outlet sensor*
 ![Data Flow Diagram](https://github.com/user-attachments/assets/21ecd59c-46c8-4735-8104-6e29d8a9c625)
