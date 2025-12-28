@@ -20,7 +20,11 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 - Compressor type: **Scroll**
 - Compressor modeling approaches: (i) Simple 1D map-based model; (ii) Hybrid model (3D to 1D) 
 - Refrigerant: **R1234yf**
-- Thermodynamic model of H/P system: **Two-phase**
+
+The main thermodynamic output of the calculations is the **P–h diagram** of the heat pump cycle, as shown in the figure below. For additional results, please refer to the Post-Processing section or the Results folder, where temperature, enthalpy, and entropy values for different parts of the cycle are provided.
+
+  ![P-h_SIM](https://github.com/user-attachments/assets/23fbd84f-a2c1-45c8-8998-3650f274ed87)
+
 
 
 The figure below illustrates how the refrigerant system interacts with the other components of the vehicle thermal management architecture in the Simulink.
