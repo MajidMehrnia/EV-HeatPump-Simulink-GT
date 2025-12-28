@@ -1,8 +1,8 @@
 The figures below show Entalhphy, Entropy and temperatures for inlet and oulet of Compressor and Condenser. 
 
-
-![Data Flow Diagram](https://github.com/user-attachments/assets/21ecd59c-46c8-4735-8104-6e29d8a9c625)
 *Condenser output sensor*
+![Data Flow Diagram](https://github.com/user-attachments/assets/21ecd59c-46c8-4735-8104-6e29d8a9c625)
+
 
 
 The three charts illustrate the behavior of a vehicle's thermal management system over a repeating cycle, likely simulating a specific driving pattern. The charts collectively depict a thermal management system responding to a cyclic load. The motor's operation generates significant heat. The system allows the DCDC converter's temperature to rise to a set-point (35°C), then activates the compressor at full power. This drives the chiller to rapidly cool the DCDC converter, and the extracted heat is rejected by the condenser. This cycle repeats, effectively keeping the component temperatures within their operational limits.
