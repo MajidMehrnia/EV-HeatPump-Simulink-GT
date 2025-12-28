@@ -17,6 +17,7 @@ The model simulated here is representative of a **Valeo**-like electric scroll c
 - Compressor modeling approaches: (i) Simple 1D map-based model; (ii) Hybrid model (3D to 1D) 
 - Refrigerant: **R1234yf**
 
+### Main Thermodynamic Output
 The main thermodynamic output of the calculations is the **P–h diagram** of the heat pump cycle, as shown in the figure below. The calculated COP (based on refrigerant enthalpy difference (cycle COP)) is 5.2 at a cabin temperature of 40 °C, which is a reasonable value for this operating condition. It should be noted that the reported COP was calculated solely based on the refrigerant-side enthalpy differences across the compressor and condenser. The electrical power consumption of the compressor drive, condenser fan, cabin blower, and other auxiliary components was not included in the calculation. Therefore, the presented value represents the cycle (thermodynamic) COP rather than the overall system COP, and the actual system-level COP of the electric vehicle heat pump would be lower. For additional results, please refer to the Post-Processing section or the Results folder, where temperature, enthalpy, and entropy values for different parts of the cycle are provided.
 
  ![P-h_SIM](https://github.com/user-attachments/assets/371ba99f-802b-4d81-b0d0-050c0812df8a)
