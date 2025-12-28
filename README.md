@@ -60,8 +60,9 @@ The figure below shows H/P system architecture in GT-SUITE.
 
 ![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
 
+
 #### Compressor
-The compressor increases the pressure and temperature of the refrigerant vapor. Low-pressure vapor exiting the evaporator is compressed and delivered to the condenser.  
+The compressor drives the flow in the refrigerant loop. It is controlled to maintain a pressure of 0.3 MPa in the chiller and the evaporator, which corresponds to a saturation temperature of around 1°C. 
 For a scroll compressor, a novel direct approach involves using a 3D CAD model of the fixed and orbiting scrolls to obtain volume and area profiles for the construction of a one-dimensional fluid dynamic model. The figure below presents a high-fidelity 1D hybrid approach for simulating a scroll compressor, demonstrating excellent agreement with test data.
 
 
@@ -79,9 +80,15 @@ Different sub-models are employed to represent thermodynamic processes, mechanic
 Due to GT-SUITE licensing restrictions, the original model files cannot be shared publicly. 
 Therefore, only representative diagrams, descriptions, and co-simulation interfaces are provided in this repository.
 
+#### Condenser
+The condenser is a rectangular tube-and-fin type heat exchanger that dissipates refrigerant heat to the air. The air flow is driven by the vehicle speed and the fan. The liquid receiver provides storage for the refrigerant and permits only subcooled liquid to flow into the expansion valves.
+
+#### Evaporator
+The evaporator is a rectangular tube-and-fin type heat exchanger that lets the refrigerant absorb heat from the air. It also dehumidifies the air when the air is humid.
+
 ## Post-processing
 
-The post-processing of the thermal simulation results focuses on resolving spatial and temporal heat flux distributions within the battery pack and their coupling to the coolant loop. Cell-level heat generation is computed internally from the electrical model and exported as a time-resolved thermal power signal, which is subsequently mapped to the thermal network. The resulting heat flux at the cell–cooling plate interface represents the effective thermal load imposed on the BTMS and varies strongly with drive cycle transients. Peak heat flux events correlate with high current demand phases rather than steady-state operation, highlighting the importance of transient thermal capacity over nominal cooling power when sizing the thermal interfaces.
+The post-processing of the thermal simulation results focuses on resolving heat flux distributions within the battery pack and their coupling to the coolant loop. Cell-level heat generation is computed internally from the electrical model and exported as a time-resolved thermal power signal, which is subsequently mapped to the thermal network. The resulting heat flux at the cell–cooling plate interface represents the effective thermal load imposed on the BTMS and varies strongly with drive cycle transients. Peak heat flux events correlate with high current demand phases rather than steady-state operation, highlighting the importance of transient thermal capacity over nominal cooling power when sizing the thermal interfaces.
 
 ![HF-1](https://github.com/user-attachments/assets/deccfc83-95e9-4024-8bff-fa5597fe9d16)
 
