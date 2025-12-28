@@ -9,11 +9,7 @@ The combined use of **Simulink (control-oriented modeling)** and **GT-SUITE (1D 
 
 ## Description
 
-Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUITE, based on a reference EV thermal architecture. The model requires the following products:
-
-- MATLAB® R2024a: Simulink®; Simscape™; Simscape Fluids™; Simscape Battery™; Simscape Driveline™; Simscape Electrical™; Stateflow®
-- GT-SUITE
-
+Developed a heat pump co-simulation framework for a BEV using Simulink & GT-SUITE, based on a reference EV thermal architecture. 
 The refrigerant system was modeled in GT-SUITE and coupled with Simulink to improve simulation accuracy. The compressor model was developed and simulated in GT-SUITE.
 The model simulated here is representative of a **Valeo**-like electric scroll compressor commonly used in automotive air-conditioning and thermal management systems. 
 
@@ -26,7 +22,7 @@ The main thermodynamic output of the calculations is the **P–h diagram** of th
  ![P-h_SIM](https://github.com/user-attachments/assets/371ba99f-802b-4d81-b0d0-050c0812df8a)
 
 
-
+## System Simulation
 The figure below illustrates how the refrigerant system interacts with the other components of the vehicle thermal management architecture in the Simulink.
 
 ![Refrig_System](https://github.com/user-attachments/assets/bdc71a1a-0043-4013-a684-7a9282a2def7)
@@ -108,6 +104,11 @@ From an energy distribution perspective, the BTMS post-processing shows that a n
 For any questions regarding the model place a comment in the repository.
 
 ## License
+The model requires the following products:
+
+- MATLAB® R2024a: Simulink®; Simscape™; Simscape Fluids™; Simscape Battery™; Simscape Driveline™; Simscape Electrical™; Stateflow®
+- GT-SUITE
+
 See [license](LICENSE.md) file attached to this repository
 
 ## Project status
