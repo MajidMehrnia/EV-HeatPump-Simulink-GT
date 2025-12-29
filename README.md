@@ -54,7 +54,8 @@ The GT-SUITE model represents the thermodynamic and mechanical behavior of the H
 
 The figure below shows H/P system architecture in GT-SUITE. 
 
-![Refrig_GT](https://github.com/user-attachments/assets/1578e7d0-9b39-4e94-b240-d45677cae40c)
+![Refrig_GT1](https://github.com/user-attachments/assets/30879b03-3e4b-4355-8cf9-fe34c6982251)
+
 
 
 #### Compressor
