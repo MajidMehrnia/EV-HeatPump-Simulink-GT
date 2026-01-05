@@ -5,6 +5,7 @@ This repository is based on an EV thermal management model originally developed 
 In addition to the Simulink implementation, the refrigerant-based thermal management system is also modeled independently in GT-SUITE. This enables a detailed system-level representation of the vapor compression cycle, including the compressor, condenser, expansion device, and evaporator, with high-fidelity thermodynamic and component performance modeling.
 
 The combined use of **Simulink (control-oriented modeling)** and **GT-SUITE (1D multi-physics system simulation)** provides a comprehensive multi-fidelity framework. 
+
 In addition, CFD simulations and thermodynamic modeling of the heat pump using **Machine Learning** and **AI** are also included in the following repository:
 [Physics-Informed-AI-ML-for-Thermodynamic-Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
