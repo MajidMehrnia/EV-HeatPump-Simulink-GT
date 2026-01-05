@@ -6,7 +6,7 @@ In addition to the Simulink implementation, the refrigerant-based thermal manage
 
 The combined use of **Simulink (control-oriented modeling)** and **GT-SUITE (1D multi-physics system simulation)** provides a comprehensive multi-fidelity framework. 
 
-In addition, CFD simulations and thermodynamic modeling of the heat pump using **Machine Learning** and **AI** are also included in the following repository:
+In addition, **CFD** simulations and thermodynamic modeling using **Machine Learning** and **AI** are also included in the following repository:
 [Physics-Informed AI/ML for Thermodynamic Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
 
