@@ -7,7 +7,7 @@ In addition to the Simulink implementation, the refrigerant-based thermal manage
 The combined use of **Simulink** (control-oriented modeling) and **GT-SUITE** (1D multi-physics system simulation) provides a comprehensive multi-fidelity framework for thermal system design.
 
 To enhance model fidelity and significantly accelerate the design process, a novel **Machine Learning (ML)**-based thermodynamic modeling approach has been developed and validated against **CFD** simulations.
-Further details are available in the companion repository:[Physics-Informed AI/ML for Thermodynamic Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
+Related CFD and AI/ML developments are available in my companion repository: [Physics-Informed AI/ML for Thermodynamic Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
 
 ## Description
